@@ -16,6 +16,6 @@ public class InvoiceService {
 
     @Consumer(topics = "#{ORDER_TOPIC_NAME}", groupId = "InvoiceService")
     public void orderArrived(final String order) {
-        LOGGER.info("Order event '{}' arrived", order);
+        LOGGER.info("Order event '{}' arrived!!!", order);
     }
 }
